@@ -8,7 +8,10 @@
 
 #import "ViewController.h"
 
+#import "LYDrawerBoarder.h"
+
 @interface ViewController ()
+- (IBAction)popBoarderView;
 
 @end
 
@@ -19,9 +22,10 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
+- (IBAction)popBoarderView
+{
+    LYDrawerBoarder *boarderView =[[LYDrawerBoarder alloc] init];
+    [boarderView show];
+}
 @end
